@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    Создать объявление
+                </li>
+                <li class="nav__item">
+                    Список Потеряшек
+                </li>
+                <li class="nav__item">
+                    Обратная связь
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="create">
+            <h1 class="create__title">Создать объявление</h1>
+            <h2 class="create__subtitle">Заполни форму ниже:</h2>
+            <form class="create__form">
+                <label for="input__image">Фотография</label>
+                <input type="file" name="image" id="input__image" required accept="image/*">
+
+                <label for="input__name">Название Потеряшки</label>
+                <input type="text" name="name" id="input__name" required maxlength="50">
+
+                <label for="input__description">Описание Потеряшки</label>
+                <input type="text" name="description" id="input__description" required maxlength="500">
+
+                <label for="input__location">Примерное место потери</label>
+                <input type="text" name="location" id="input__location" required maxlength="50">
+
+                <label for="input__phone">Телефон для связи</label>
+                <input type="tel" name="phone" id="input__phone" required minlength="11">
+
+                <button type="submit">Создать объявление</button>
+            </form>
+            <div class="visually-hidden create__alert">
+                <p>Объявление успешно создано</p>
+            </div>
+        </section>
+
+        <section class="gallery visually-hidden">
+            <h1 class="gallery__title">Все Потеряшки</h1>
+            <div class="gallery__container">
+                <article class="gallery__card">
+                    <button type="button" class="card__button"></button>
+                    <h2 class="card__title">1) Далеко-далеко за словесными горами в стране.</h2>
+                    <h3 class="card__description">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                        рыбные тексты.</h3>
+                    <div class="card__location">
+                        <img src="src/pine.jpg" alt="Изображение предмета">
+                        <p>Далеко-далеко, за словесными.</p>
+                    </div>
+                    <a href="" class="card__phone">+79999999999</a>
+                </article>
+
+                <article class="gallery__card">
+                    <button type="button" class="card__button"></button>
+                    <h2 class="card__title">2) Далеко-далеко за словесными горами в стране.</h2>
+                    <h3 class="card__description">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                        рыбные тексты.</h3>
+                    <div class="card__location">
+                        <img src="src/pineapple.jpg" alt="Изображение предмета">
+                        <p>Далеко-далеко, за словесными.</p>
+                    </div>
+                    <a href="" class="card__phone">+79999999999</a>
+                </article>
+
+                <article class="gallery__card">
+                    <button type="button" class="card__button"></button>
+                    <h2 class="card__title">3) Далеко-далеко за словесными горами в стране.</h2>
+                    <h3 class="card__description">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                        рыбные тексты.</h3>
+                    <div class="card__location">
+                        <img src="src/apple.avif" alt="Изображение предмета">
+                        <p>Далеко-далеко, за словесными.</p>
+                    </div>
+                    <a href="" class="card__phone">+79999999999</a>
+                </article>
+
+                <article class="gallery__card">
+                    <button type="button" class="card__button"></button>
+                    <h2 class="card__title">4) Далеко-далеко за словесными горами в стране.</h2>
+                    <h3 class="card__description">Далеко-далеко за словесными горами в стране, гласных и согласных живут
+                        рыбные тексты.</h3>
+                    <div class="card__location">
+                        <img src="src/pen.jpg" alt="Изображение предмета">
+                        <p>Далеко-далеко, за словесными.</p>
+                    </div>
+                    <a href="" class="card__phone">+79999999999</a>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="contact visually-hidden">
+            <h1 class="contact__title">Нашли ошибку?</h1>
+            <h2 class="contact__subtitle">Заполните форму ниже:</h2>
+
+            <form class="contact__form">
+                <label for="contact-input__name">Ваше имя</label>
+                <input type="text" name="name" id="contact-input__name" maxlength="20">
+
+                <label for="contact-input__message">Ваше сообщение, подробно опишите проблему</label>
+                <textarea name="message" id="contact-input__message" maxlength="700"></textarea>
+
+                <button type="submit">Отправить обращение</button>
+            </form>
+
+            <div class="visually-hidden contact__alert">
+                <p>Обращение отправлено</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
