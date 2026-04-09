@@ -117,7 +117,6 @@ class StorageManager {
 
         const cards = StorageManager.getCards()
         cards.forEach(cardData => {
-            console.log(cardData)
             const card = new CardCreator(cardData)
 
             galleryContainer.append(card.create())
@@ -259,7 +258,6 @@ createForm.addEventListener('submit', async (event) => {
     }
 
     const cardData = checker.getData()
-    console.log(cardData)
 
     StorageManager.addCard(cardData)
     StorageManager.renderCards()
